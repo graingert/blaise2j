@@ -1,0 +1,88 @@
+digraph {
+
+	ordering=out;
+	ranksep=.4;
+	bgcolor="lightgrey"; node [shape=box, fixedsize=false, fontsize=12, fontname="Helvetica-bold", fontcolor="blue"
+		width=.25, height=.25, color="black", fillcolor="white", style="filled, solid, bold"];
+	edge [arrowsize=.5, color="black", style="bold"]
+
+  n0 [label="PROGRAM"];
+  n1 [label="Test"];
+  n2 [label="Test"];
+  n3 [label="DECLARATIONS"];
+  n3 [label="DECLARATIONS"];
+  n4 [label="CONST"];
+  n4 [label="CONST"];
+  n5 [label="ubuntu"];
+  n6 [label="INTEGER"];
+  n7 [label="6"];
+  n8 [label="CONST"];
+  n8 [label="CONST"];
+  n9 [label="lindows"];
+  n10 [label="INTEGER"];
+  n11 [label="94"];
+  n12 [label="STATEMENT_BLOCK"];
+  n12 [label="STATEMENT_BLOCK"];
+  n13 [label="ASSIGNMENT_STATEMENT"];
+  n13 [label="ASSIGNMENT_STATEMENT"];
+  n14 [label="ubuntu"];
+  n15 [label="4"];
+  n16 [label="IF_STATEMENT"];
+  n16 [label="IF_STATEMENT"];
+  n17 [label="="];
+  n17 [label="="];
+  n18 [label="ubuntu"];
+  n19 [label="/"];
+  n19 [label="/"];
+  n20 [label="2"];
+  n21 [label="2"];
+  n22 [label="ASSIGNMENT_STATEMENT"];
+  n22 [label="ASSIGNMENT_STATEMENT"];
+  n23 [label="ubuntu"];
+  n24 [label="2"];
+  n25 [label="IF_STATEMENT"];
+  n25 [label="IF_STATEMENT"];
+  n26 [label="="];
+  n26 [label="="];
+  n27 [label="ubuntu"];
+  n28 [label="4"];
+  n29 [label="ASSIGNMENT_STATEMENT"];
+  n29 [label="ASSIGNMENT_STATEMENT"];
+  n30 [label="ubuntu"];
+  n31 [label="3"];
+  n32 [label="STATEMENT_BLOCK"];
+
+  n0 -> n1 // "PROGRAM" -> "Test"
+  n0 -> n2 // "PROGRAM" -> "Test"
+  n0 -> n3 // "PROGRAM" -> "DECLARATIONS"
+  n3 -> n4 // "DECLARATIONS" -> "CONST"
+  n4 -> n5 // "CONST" -> "ubuntu"
+  n4 -> n6 // "CONST" -> "INTEGER"
+  n4 -> n7 // "CONST" -> "6"
+  n3 -> n8 // "DECLARATIONS" -> "CONST"
+  n8 -> n9 // "CONST" -> "lindows"
+  n8 -> n10 // "CONST" -> "INTEGER"
+  n8 -> n11 // "CONST" -> "94"
+  n0 -> n12 // "PROGRAM" -> "STATEMENT_BLOCK"
+  n12 -> n13 // "STATEMENT_BLOCK" -> "ASSIGNMENT_STATEMENT"
+  n13 -> n14 // "ASSIGNMENT_STATEMENT" -> "ubuntu"
+  n13 -> n15 // "ASSIGNMENT_STATEMENT" -> "4"
+  n12 -> n16 // "STATEMENT_BLOCK" -> "IF_STATEMENT"
+  n16 -> n17 // "IF_STATEMENT" -> "="
+  n17 -> n18 // "=" -> "ubuntu"
+  n17 -> n19 // "=" -> "/"
+  n19 -> n20 // "/" -> "2"
+  n19 -> n21 // "/" -> "2"
+  n16 -> n22 // "IF_STATEMENT" -> "ASSIGNMENT_STATEMENT"
+  n22 -> n23 // "ASSIGNMENT_STATEMENT" -> "ubuntu"
+  n22 -> n24 // "ASSIGNMENT_STATEMENT" -> "2"
+  n12 -> n25 // "STATEMENT_BLOCK" -> "IF_STATEMENT"
+  n25 -> n26 // "IF_STATEMENT" -> "="
+  n26 -> n27 // "=" -> "ubuntu"
+  n26 -> n28 // "=" -> "4"
+  n25 -> n29 // "IF_STATEMENT" -> "ASSIGNMENT_STATEMENT"
+  n29 -> n30 // "ASSIGNMENT_STATEMENT" -> "ubuntu"
+  n29 -> n31 // "ASSIGNMENT_STATEMENT" -> "3"
+  n12 -> n32 // "STATEMENT_BLOCK" -> "STATEMENT_BLOCK"
+
+}
